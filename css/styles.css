@@ -35,7 +35,7 @@ button {
 
 body {
   font-family: "Montserrat";
-  background-image: url(images/mobile-1x.png);
+  background-image: url(./images/mobile-1x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -557,7 +557,7 @@ h2 {
     display: none;
   }
   body {
-    background-image: url(images/tablet-1x.png);
+    background-image: url(./images/tablet-1x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -643,7 +643,7 @@ h2 {
 
 @media (min-width: 1440px) {
   body {
-    background-image: url(images/desktop-1x.png);
+    background-image: url(./images/desktop-1x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
