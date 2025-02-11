@@ -35,7 +35,7 @@ button {
 
 body {
   font-family: "Montserrat";
-  background-image: url(../images/mobile-1x.png);
+  background-image: url(/images/mobile-1x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
