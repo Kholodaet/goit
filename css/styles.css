@@ -35,7 +35,7 @@ button {
 
 body {
   font-family: "Montserrat";
-  background-image: url(/images/mobile-1x.png);
+  background-image: url(../images/mobile-1x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -757,7 +757,7 @@ h2 {
   .registration_box {
     max-width: 320px;
     max-height: 242px;
-    margin: 24px 0 0 0; 
+    margin: 24px 0 0 0;
     padding-top: 24px;
     padding-left: 20px;
   }
@@ -774,7 +774,6 @@ h2 {
     gap: 8px;
   }
   .hero-text {
-    
     padding-top: 16px;
     max-width: 320px;
   }
@@ -795,8 +794,8 @@ h2 {
   padding-left: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 16px; 
-  height: 16px; 
+  width: 16px;
+  height: 16px;
   border: 1px solid;
   background-color: white;
   cursor: pointer;
@@ -804,23 +803,22 @@ h2 {
 }
 
 .checkbox-container input:checked::before {
-  content: "\2714"; 
+  content: "\2714";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 14px; 
-  color: #0f7c41; 
+  font-size: 14px;
+  color: #0f7c41;
 }
 
 .checkbox-container input {
- 
-  background-color: white; 
-  border-color: #0f7c41; 
+  background-color: white;
+  border-color: #0f7c41;
 }
 
 .checkbox-container input:checked::before {
-  color: #0f7c41; /
+  color: #0f7c41;
 }
 
 .policy {
@@ -828,5 +826,5 @@ h2 {
 }
 
 .modal {
-  display: none; }
-
+  display: none;
+}
