@@ -36,10 +36,10 @@ button {
 body {
   font-family: "Montserrat";
   background-image: url(/images/mobile-1x.png);
-  background-size: cover; /* Важливо для масштабування зображення */
-  background-repeat: no-repeat; /* Важливо для запобігання повторенню */
-  background-position: center; /* Центрує зображення (за бажанням) */
-  background-color: #f1f1f1; /* Запасний колір фону на випадок помилки завантаження зображення або його відсутності */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f1f1f1;
 }
 .container {
   width: 100%;
@@ -56,16 +56,14 @@ ul {
   margin: 0;
 }
 
-/* Основні стилі для модального вікна */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000; /* Високий z-index, щоб перекрити інші елементи */
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh; /* Займає всю висоту вікна */
-  /* background: rgba(0, 0, 0, 0.5); Затемнення фону */
+  height: 100vh;
   display: flex;
 }
 
@@ -73,11 +71,9 @@ ul {
   position: relative;
   background-color: white;
   padding: 20px;
-  width: 90%; /* Робимо модальне вікно адаптивним */
+  width: 90%;
   max-width: 400px;
 }
-
-/* Інші стилі */
 
 .icon-logo {
   width: 100px;
@@ -93,18 +89,6 @@ ul {
   flex-direction: column;
   padding-top: 16px;
   align-items: flex-start;
-  /* padding-left: 20px; */
-}
-
-@media (max-width: 786px) {
-  .first_section {
-    /* padding-left: 20px; */
-  }
-}
-@media (max-width: 1440px) {
-  .first_section {
-    /* padding-left: 32px; */
-  }
 }
 
 .first_section_text {
@@ -117,10 +101,6 @@ ul {
   color: #0f7c41;
   gap: 8px;
 }
-
-/* span {
-  font-weight: 700;
-} */
 
 h1 {
   font-family: "Montserrat";
@@ -224,14 +204,13 @@ h2 {
 }
 
 .timer-separator {
-  font-size: 28px; /* Розмір як у цифр */
+  font-size: 28px;
   font-weight: bold;
-  color: gray; /* Сірий колір */
-  margin: 0 5px; /* Відступи, щоб не прилипали до цифр */
+  color: gray;
+  margin: 0 5px;
   padding-bottom: 15px;
 }
 
-/* Стилі для іконки закриття */
 .close-modal {
   position: absolute;
   width: 32px;
@@ -273,15 +252,14 @@ h2 {
   padding-left: 20px;
 }
 
-/* Стилі для іконки модального вікна */
 .icon-modal {
   width: 100px;
   height: 30px;
-  padding-top: 0; /* Remove padding top to make it align properly */
-  padding-left: 28px; /* Add left padding to create the 28px space */
+  padding-top: 0;
+  padding-left: 28px;
   position: absolute;
-  top: 28px; /* Align it at the top with the same margin */
-  left: 28px; /* Set left margin to 28px */
+  top: 28px;
+  left: 28px;
 }
 
 .close-modal {
@@ -292,17 +270,14 @@ h2 {
   font-size: 32px;
   color: #010101;
   transition: transform 0.2s ease-in-out;
-  top: 28px; /* Align with the modal icon */
-  left: 308px; /* Ensure this is 188px away from the modal icon (28px + 188px) */
+  top: 28px;
+  left: 308px;
 }
 
 .close-modal:hover {
   transform: scale(1.1);
 }
 
-/*  styles */
-
-/* Центруємо модальне вікно */
 .modal {
   display: flex;
 
@@ -314,8 +289,6 @@ h2 {
   width: 100%;
   height: 100vh;
 }
-
-/* Контейнер для модального контенту */
 .modal-content {
   position: relative;
   background-color: white;
@@ -326,7 +299,6 @@ h2 {
   text-align: center;
 }
 
-/* Логотип */
 .icon-modal {
   width: 100px;
   height: 30px;
@@ -335,7 +307,6 @@ h2 {
   left: 20px;
 }
 
-/* Кнопка закриття */
 .close-modal {
   position: absolute;
   top: 20px;
@@ -350,7 +321,6 @@ h2 {
   transform: scale(1.1);
 }
 
-/* Таймер */
 .timer-container {
   display: flex;
   justify-content: center;
@@ -369,19 +339,6 @@ h2 {
   gap: 12px;
 }
 
-/* Поля вводу */
-input {
-  width: 100%;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-/* Телефонний інпут */
-/* #phone {
-  position: relative;
-  padding-left: 40px;
-} */
-
 .icon-flag {
   position: absolute;
   left: 10px;
@@ -391,7 +348,6 @@ input {
   height: 16px;
 }
 
-/* Чекбокс */
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -406,7 +362,6 @@ input {
   height: 16px;
 }
 
-/* Кнопка */
 .first_button {
   width: 100%;
   padding: 16px;
@@ -442,14 +397,6 @@ input {
   padding-top: 29px;
 }
 
-/* h2 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-} */
-
-/* Контейнер для цифр таймера */
 .timer-items-wrapper {
   display: flex;
   gap: 10px;
@@ -461,20 +408,7 @@ input {
   flex-direction: column;
   align-items: center;
 }
-/* 
-.time-value {
-  font-size: 28px;
-  color: #333;
-} */
 
-/* .time-label {
-  font-size: 12px;
-  color: #777;
-} */
-
-/* .timer-separator {
-  font-size: 20px;
-} */
 .input-container {
   position: relative;
   display: flex;
@@ -500,13 +434,12 @@ input {
 
 .input-container .icon-flag {
   position: absolute;
-  left: 15px; /* Розташування іконки всередині інпуту */
+  left: 15px;
   width: 24px;
   height: 24px;
-  pointer-events: none; /* Іконка не блокує натискання */
+  pointer-events: none;
 }
 
-/* Модальне вікно */
 .modal-content {
   display: flex;
   flex-direction: column;
@@ -520,42 +453,28 @@ input {
   overflow: hidden;
 }
 
-/* Інпут всередині модального вікна */
-.input-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 100%; /* Переконаємося, що інпут займає всю ширину */
-  max-width: 320px; /* Максимальна ширина */
-  margin-bottom: 16px; /* Відступ для кожного інпуту */
-}
-
-/* Стилі для самого інпуту */
 .input-container input {
-  width: 100%; /* Ширина інпуту займає всю ширину контейнера */
+  width: 100%;
   height: 48px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
-  padding-left: 50px; /* Місце для іконки */
+  padding-left: 50px;
   gap: 8px;
-  background: #f2f4fa; /* Колір фону */
-  border: none; /* Без обведення */
-  border-radius: 0; /* Без бордер-радіусу */
+  background: #f2f4fa;
+  border: none;
+  border-radius: 0;
   font-size: 16px;
 }
 
-/* Іконка в інпуті */
 .input-container .icon-flag {
   position: absolute;
-  left: 15px; /* Розташування іконки всередині інпуту */
+  left: 15px;
   width: 24px;
   height: 24px;
-  pointer-events: none; /* Іконка не блокує натискання */
+  pointer-events: none;
 }
 
-/* Стилі для кнопок та інших елементів */
 .first_button {
   width: 100%;
   padding: 16px;
@@ -570,72 +489,59 @@ input {
 .first_button:hover {
   background: #0d6a37;
 }
-/* Для всіх інпутів в модальному вікні */
+
 .modal-content input {
-  width: 100%; /* Інпут займає всю доступну ширину */
-  /* max-width: 320px; Максимальна ширина */
+  width: 100%;
   height: 48px;
   padding-left: 16px;
   gap: 8px;
-  background: #f2f4fa; /* Колір фону */
-  border: none; /* Без обведення */
-  /* border-radius: 6px; Легкий бордер-радіус */
+  background: #f2f4fa;
+  border: none;
   font-size: 16px;
-  box-sizing: border-box; /* Щоб padding не збільшував ширину */
+  box-sizing: border-box;
 }
 
-/* Для телефонного інпуту */
 .modal-content #phone {
-  padding-left: 50px; /* Місце для іконки */
-  max-width: 100%; /* Задаємо ширину до 100% доступного простору */
+  padding-left: 50px;
+  max-width: 100%;
 }
 
-/* Для контейнера з іконкою прапора */
 .input-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 320px; /* Тепер контейнер для інпутів має максимальну ширину */
+  max-width: 320px;
   margin: 0 auto;
 }
 
-/* Іконка прапора всередині інпуту */
 .input-container .icon-flag {
   position: absolute;
-  left: 15px; /* Розташування іконки всередині інпуту */
+  left: 15px;
   width: 24px;
   height: 24px;
-  pointer-events: none; /* Іконка не блокує натискання */
+  pointer-events: none;
 }
 
-/* Інпут з іконкою прапора */
 .input-container input {
-  width: 100%; /* Розтягуємо інпут на всю ширину контейнера */
+  width: 100%;
   height: 48px;
-  padding-left: 50px; /* Відступ для іконки */
-  background: #f2f4fa; /* Колір фону */
+  padding-left: 50px;
+  background: #f2f4fa;
   border: none;
   font-size: 16px;
   box-sizing: border-box;
 }
-/* 
-Чекбокс повертається до попередніх розмірів
-.checkbox-container input {
-  width: 16px; 
-  height: 16px;
-} */
 
-/* Приховати форму на мобільних пристроях */
 @media (max-width: 768px) {
   .for_tablet {
     display: none !important;
   }
 
   .register-btn {
-    display: block; /* У випадку, якщо ця кнопка була прихована іншим чином */
-    margin-top: 10px; /* Можна додати відступ, щоб кнопка була під лічильником */
+    display: block;
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -652,9 +558,9 @@ input {
   }
   body {
     background-image: url(/images/tablet-1x.png);
-    background-size: cover; /* Важливо для масштабування зображення */
-    background-repeat: no-repeat; /* Важливо для запобігання повторенню */
-    background-position: center; /* Центрує зображення (за бажанням) */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #f1f1f1;
   }
   .container-text {
@@ -686,8 +592,8 @@ input {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 16px; /* Змінено на 16px */
-    height: 16px; /* Змінено на 16px */
+    width: 16px;
+    height: 16px;
     border: 1px solid;
     background-color: white;
     cursor: pointer;
@@ -701,10 +607,7 @@ input {
 
     top: 81px;
     left: 400px;
-    /* padding-top: 32px;
-    padding-right: 20px;
-    padding-bottom: 32px;
-    padding-left: 20px; */
+
     gap: 24px;
 
     box-sizing: border-box;
@@ -729,8 +632,8 @@ input {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 16px; /* Змінено на 16px */
-    height: 16px; /* Змінено на 16px */
+    width: 16px;
+    height: 16px;
     border: 1px solid;
     background-color: white;
     cursor: pointer;
@@ -751,8 +654,8 @@ input {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 16px; /* Змінено на 16px */
-    height: 16px; /* Змінено на 16px */
+    width: 16px;
+    height: 16px;
     border: 1px solid;
     background-color: white;
     cursor: pointer;
@@ -790,17 +693,20 @@ input {
 
   .hero-text {
     max-width: 624px;
+    font-size: 56px;
+  }
+  h1 {
+    font-size: 56px;
   }
   .hero {
-    grid-column: 1; /* hero займає першу колонку */
+    grid-column: 1;
     max-width: 624px;
   }
 
   .registration_box {
     margin-bottom: 110px;
     max-width: 488px;
-    /* height: 100%; */
-    /* width: 100%; */
+
     max-height: 580px;
     position: absolute;
     top: 110px;
@@ -810,7 +716,7 @@ input {
     box-sizing: border-box;
   }
   .description {
-    max-width: 524px;
+    max-width: 554px;
     padding-top: 40px;
   }
   .input-form {
@@ -842,17 +748,16 @@ input {
 }
 @media (max-width: 768px) {
   .hero-container {
-    /* Або інший батьківський контейнер */
     display: flex;
-    flex-direction: column; /* Розташування вертикально */
-    align-items: flex-start; /* Вирівнювання по лівому краю */
-    padding-left: 20px; /* Відступ зліва для всього контейнера */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
   }
 
   .registration_box {
     max-width: 320px;
     max-height: 242px;
-    margin: 24px 0 0 0; /* Відступ зверху та зліва 0 */
+    margin: 24px 0 0 0; 
     padding-top: 24px;
     padding-left: 20px;
   }
@@ -869,13 +774,12 @@ input {
     gap: 8px;
   }
   .hero-text {
-    /* padding-left: 20px; */
+    
     padding-top: 16px;
     max-width: 320px;
   }
 }
 
-/* modal */
 .h-for-modal {
   font-family: "Montserrat";
   font-weight: 700;
@@ -891,8 +795,8 @@ input {
   padding-left: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 16px; /* Змінено на 16px */
-  height: 16px; /* Змінено на 16px */
+  width: 16px; 
+  height: 16px; 
   border: 1px solid;
   background-color: white;
   cursor: pointer;
@@ -900,23 +804,23 @@ input {
 }
 
 .checkbox-container input:checked::before {
-  content: "\2714"; /* Символ галочки (Unicode) */
+  content: "\2714"; 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 14px; /* Розмір галочки */
-  color: #0f7c41; /* Зелений колір */
+  font-size: 14px; 
+  color: #0f7c41; 
 }
 
 .checkbox-container input {
-  /* Або .blue-background .checkbox-container input */
-  background-color: white; /* Явно задаємо білий фон */
-  border-color: #0f7c41; /* Сіра рамка */
+ 
+  background-color: white; 
+  border-color: #0f7c41; 
 }
 
 .checkbox-container input:checked::before {
-  color: #0f7c41; /* Зелена галочка */
+  color: #0f7c41; /
 }
 
 .policy {
@@ -924,5 +828,5 @@ input {
 }
 
 .modal {
-  display: none; /* Приховуємо модальне вікно */
-}
+  display: none; }
+
