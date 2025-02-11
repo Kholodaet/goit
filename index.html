@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html">
+        <svg class="icon icon-logo" aria-label="Логотип">
+          <use xlink:href="./sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </header>
+    <main>
+      <section class="first_section">
+        <div class="container-text">
+          <p class="first_section_text">Безоплатний вебінар</p>
+          <p class="first_section_text">Старт: <span>10 січня 19:30</span></p>
+        </div>
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1 class="hero">
+              Навчіться створювати Excel-таблиці на pro-рівні
+            </h1>
+            <p class="description">
+              Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу та
+              створюйте таблиці швидко і в задоволення.
+            </p>
+          </div>
+          <div class="registration_box">
+            <h2>Реєструйся просто зараз</h2>
+
+            <div class="timer-container">
+              <div class="timer-item">
+                <span id="days" class="time-value"></span>
+                <span class="time-label">ДНІВ</span>
+              </div>
+              <span class="timer-separator">:</span>
+              <div class="timer-item">
+                <span id="hours" class="time-value"></span>
+                <span class="time-label">ГОДИН</span>
+              </div>
+              <span class="timer-separator">:</span>
+              <div class="timer-item">
+                <span id="minutes" class="time-value"></span>
+                <span class="time-label">ХВИЛИН</span>
+              </div>
+              <span class="timer-separator">:</span>
+              <div class="timer-item">
+                <span id="seconds" class="time-value seconds"></span>
+                <span class="time-label">СЕКУНД</span>
+              </div>
+            </div>
+            <form id="registration-form" class="for_tablet">
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  class="input-form"
+                  name="name"
+                  placeholder="Введи своє ім’я"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="input-form"
+                  placeholder="Введи свій E-mail"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <input
+                  type="tel"
+                  class="input-form"
+                  id="phone"
+                  name="phone"
+                  required
+                  pattern="\+?\d{10,13}"
+                  placeholder="+380 95 -- -- ---"
+                />
+                <svg class="icon icon-flag">
+                  <use xlink:href="./sprite.svg#icon-flag"></use>
+                </svg>
+              </div>
+
+              <div class="checkbox-container">
+                <input type="checkbox" id="terms" required />
+                <label for="terms"
+                  >Згоден з
+                  <a href="#" class="policy">Політика конфіденційності</a> та
+                  <a href="#" class="policy"
+                    >Умови користування послугами</a
+                  ></label
+                >
+              </div>
+              <button type="submit" class="register-btn">
+                Зареєструватися
+              </button>
+            </form>
+            <div class="registration-section" type="submit">
+              <button class="first_button register-btn">Зареєструватися</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal">
+        <div class="modal-content">
+          <a href="./index.html">
+            <svg class="icon icon-modal" aria-label="Логотип">
+              <use xlink:href="./sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <a href="" class="close-modal">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <path
+                d="M24.707 8.707c0.39-0.391 0.39-1.024 0-1.414s-1.024-0.391-1.414 0l-7.293 7.293-7.293-7.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l7.293 7.293-7.293 7.293c-0.391 0.39-0.391 1.024 0 1.414s1.024 0.39 1.414 0l7.293-7.293 7.293 7.293c0.39 0.39 1.024 0.39 1.414 0s0.39-1.024 0-1.414l-7.293-7.293 7.293-7.293z"
+              ></path>
+            </svg>
+          </a>
+
+          <div class="timer-container for-modal">
+            <h2 class="h-for-modal">Реєструйся просто зараз</h2>
+            <div class="timer-items-wrapper">
+              <div class="timer-item">
+                <span id="modal-days" class="time-value">00</span>
+                <span class="timer-label">ДНІВ</span>
+              </div>
+              <span class="timer-separator">:</span>
+              <div class="timer-item">
+                <span id="modal-hours" class="time-value">00</span>
+                <span class="timer-label">ГОДИН</span>
+              </div>
+              <span class="timer-separator">:</span>
+              <div class="timer-item">
+                <span id="modal-minutes" class="time-value">00</span>
+                <span class="timer-label">ХВИЛИН</span>
+              </div>
+              <span class="timer-separator">:</span>
+              <div class="timer-item">
+                <span id="modal-seconds" class="time-value seconds">00</span>
+                <span class="timer-label">СЕКУНД</span>
+              </div>
+            </div>
+          </div>
+
+          <form id="registration-form">
+            <div>
+              <input
+                type="text"
+                class="input-form"
+                id="name"
+                name="name"
+                placeholder="Введи своє ім’я"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                class="input-form"
+                name="email"
+                placeholder="Введи свій E-mail"
+                required
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                pattern="\+?\d{10,13}"
+                placeholder="+380 95 -- -- ---"
+              />
+              <svg class="icon icon-flag">
+                <use xlink:href="./sprite.svg#icon-flag"></use>
+              </svg>
+            </div>
+
+            <div class="checkbox-container">
+              <input type="checkbox" id="terms" required />
+              <label for="terms"
+                >Згоден з
+                <a href="#" class="policy">Політика конфіденційності</a> та
+                <a href="#" class="policy"
+                  >Умови користування послугами</a
+                ></label
+              >
+            </div>
+            <button type="submit" class="first_button">Зареєструватися</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
